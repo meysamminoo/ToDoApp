@@ -1,11 +1,16 @@
+@font-face {
+	font-family: "2mehr";
+	src: url(./../fonts/2\ Mehr\ Bold.ttf);
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	direction: rtl;
-	font-family: Anjoman;
+	font-family: "2mehr";
 }
 body {
+	height: 100vh;
 	background:#100b10;
 	display: flex;
 	justify-content: center;
@@ -14,10 +19,11 @@ body {
 .container {
 	width: 250px;
 	height: 400px;
-	background: #1b1b1b;
+	background: #313233;
 	border:none;
 	border-radius: 20px;
 	display: flex;
+	flex-direction: column;
 	overflow: hidden;
 	border: 2px solid #c651cd;
 }
@@ -83,7 +89,7 @@ i.fa-check:hover {
 	color: #5eb670;
 }
 i.fa-trash-alt:hover {
-	color: #5eb670;
+	color: #fa4040;
 }
 i.fa-check:active {
 	transform: translateY(3px);
